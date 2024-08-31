@@ -175,6 +175,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_ljfjh")
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_htdux"]
+distance = 13.0
 
 [sub_resource type="Animation" id="Animation_81v5a"]
 length = 0.001
@@ -247,9 +248,10 @@ limit_smoothed = true
 position_smoothing_enabled = true
 
 [node name="killZone" parent="." instance=ExtResource("5_yu2u2")]
-position = Vector2(189, 175)
+position = Vector2(198, 145)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killZone"]
+position = Vector2(-1, 2)
 shape = SubResource("WorldBoundaryShape2D_htdux")
 
 [node name="All Coin" type="Node" parent="."]

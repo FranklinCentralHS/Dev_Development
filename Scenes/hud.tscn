@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7prdv3nwu8r3"]
+
+[ext_resource type="FontFile" uid="uid://cc3rn5io0q47q" path="res://Assets/fonts/PixelOperator8.ttf" id="1_yud3p"]
+[ext_resource type="Texture2D" uid="uid://cfoacjatkbmbs" path="res://Assets/sprites/coin.png" id="2_7qdrf"]
+
+[node name="HUD" type="CanvasLayer"]
+scale = Vector2(5, 5)
+transform = Transform2D(5, 0, 0, 5, 0, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(50, 50)
+scale = Vector2(2, 2)
+texture = ExtResource("2_7qdrf")
+region_enabled = true
+region_rect = Rect2(3, 3, 10, 10)
+
+[node name="coinCounter" type="Label" parent="."]
+offset_left = 63.0
+offset_top = 40.0
+offset_right = 117.0
+offset_bottom = 63.0
+theme_override_fonts/font = ExtResource("1_yud3p")
+text = "x 0"
+vertical_alignment = 1

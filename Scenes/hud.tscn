@@ -4,8 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://cfoacjatkbmbs" path="res://Assets/sprites/coin.png" id="2_7qdrf"]
 
 [node name="HUD" type="CanvasLayer"]
-scale = Vector2(5, 5)
-transform = Transform2D(5, 0, 0, 5, 0, 0)
+offset = Vector2(-50, -50)
+scale = Vector2(2, 2)
+transform = Transform2D(2, 0, 0, 2, -50, -50)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(50, 50)

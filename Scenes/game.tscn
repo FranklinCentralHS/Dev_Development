@@ -1,10 +1,9 @@
-[gd_scene load_steps=17 format=3 uid="uid://g1xsag7l4f1b"]
+[gd_scene load_steps=16 format=3 uid="uid://g1xsag7l4f1b"]
 
 [ext_resource type="PackedScene" uid="uid://bihiosntpc1l3" path="res://Scenes/player.tscn" id="1_10t5g"]
 [ext_resource type="Script" path="res://Scripts/game_manager.gd" id="1_f57mx"]
 [ext_resource type="Texture2D" uid="uid://njh47cs0c67w" path="res://Assets/sprites/world_tileset.png" id="2_tbluy"]
 [ext_resource type="PackedScene" uid="uid://dkeq1o2bg4dld" path="res://Scenes/platform.tscn" id="3_g35tt"]
-[ext_resource type="FontFile" uid="uid://cc3rn5io0q47q" path="res://Assets/fonts/PixelOperator8.ttf" id="3_nh7ow"]
 [ext_resource type="PackedScene" uid="uid://8418rlgh624u" path="res://Scenes/coin.tscn" id="4_n6ghw"]
 [ext_resource type="PackedScene" uid="uid://c7prdv3nwu8r3" path="res://Scenes/hud.tscn" id="5_0v3s1"]
 [ext_resource type="PackedScene" uid="uid://dhmgjse1rh7kj" path="res://Scenes/kill_zone.tscn" id="5_yu2u2"]
@@ -221,14 +220,6 @@ _data = {
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("1_f57mx")
-
-[node name="ScoreLabel" type="Label" parent="GameManager"]
-offset_left = 582.0
-offset_top = -129.0
-offset_right = 784.0
-offset_bottom = -106.0
-theme_override_fonts/font = ExtResource("3_nh7ow")
-text = "Current Coins: x"
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_mcodl")

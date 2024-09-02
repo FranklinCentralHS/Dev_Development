@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://g1xsag7l4f1b"]
+[gd_scene load_steps=15 format=3 uid="uid://g1xsag7l4f1b"]
 
 [ext_resource type="PackedScene" uid="uid://bihiosntpc1l3" path="res://Scenes/player.tscn" id="1_10t5g"]
 [ext_resource type="Script" path="res://Scripts/game_manager.gd" id="1_f57mx"]
@@ -8,7 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://c7prdv3nwu8r3" path="res://Scenes/hud.tscn" id="5_0v3s1"]
 [ext_resource type="PackedScene" uid="uid://dhmgjse1rh7kj" path="res://Scenes/kill_zone.tscn" id="5_yu2u2"]
 [ext_resource type="PackedScene" uid="uid://pkkdor1qk8x1" path="res://Scenes/tropical_slime.tscn" id="6_pjgsg"]
-[ext_resource type="PackedScene" uid="uid://c67yj0msugwy6" path="res://Scenes/music.tscn" id="9_j4pxc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ljfjh"]
 texture = ExtResource("2_tbluy")
@@ -270,9 +269,6 @@ libraries = {
 "": SubResource("AnimationLibrary_n8g6h")
 }
 autoplay = "move"
-
-[node name="Music" parent="." instance=ExtResource("9_j4pxc")]
-bus = &"Master"
 
 [node name="Slimes" type="Node" parent="."]
 

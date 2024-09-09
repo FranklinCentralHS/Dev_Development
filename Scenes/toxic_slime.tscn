@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dqq1yhj6f0h84"]
+[gd_scene load_steps=10 format=3 uid="uid://bnep3jab5x1ai"]
 
 [ext_resource type="Script" path="res://Scripts/toxic_slime.gd" id="1_i0y44"]
 [ext_resource type="Texture2D" uid="uid://cte7hde1eci72" path="res://Assets/sprites/slime_purple.png" id="1_w3pfg"]
@@ -44,14 +44,17 @@ animations = [{
 size = Vector2(14, 15)
 
 [node name="toxic slime" type="Node2D"]
+scale = Vector2(2, 2)
 script = ExtResource("1_i0y44")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ri6fo")
 autoplay = "default"
-frame_progress = 0.190172
+frame_progress = 0.187857
 
 [node name="killZone" parent="AnimatedSprite2D" instance=ExtResource("2_4npw4")]
+position = Vector2(0, 2)
+rotation = 0.000946372
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/killZone"]
 position = Vector2(0, 4.5)
@@ -59,16 +62,16 @@ shape = SubResource("RectangleShape2D_28iht")
 
 [node name="RayCastRight" type="RayCast2D" parent="."]
 position = Vector2(0, 5)
-target_position = Vector2(13, 0)
+target_position = Vector2(11, 0)
 
 [node name="RayCastLeft" type="RayCast2D" parent="."]
 position = Vector2(0, 5)
-target_position = Vector2(-13, 0)
+target_position = Vector2(-11, 0)
 
 [node name="RayCastLeftDown" type="RayCast2D" parent="."]
-position = Vector2(-13, 5)
-target_position = Vector2(0, 10)
+position = Vector2(-11, 5)
+target_position = Vector2(0, 11)
 
 [node name="RayCastRightDown" type="RayCast2D" parent="."]
-position = Vector2(13, 5)
-target_position = Vector2(0, 10)
+position = Vector2(11, 5)
+target_position = Vector2(0, 11)

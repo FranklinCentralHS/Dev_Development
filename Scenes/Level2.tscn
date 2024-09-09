@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://njh47cs0c67w" path="res://Assets/sprites/world_tileset.png" id="3_c56m1"]
 [ext_resource type="PackedScene" uid="uid://bihiosntpc1l3" path="res://Scenes/player.tscn" id="4_bmdlo"]
 [ext_resource type="PackedScene" uid="uid://dhmgjse1rh7kj" path="res://Scenes/kill_zone.tscn" id="5_f3iuj"]
-[ext_resource type="PackedScene" uid="uid://pkkdor1qk8x1" path="res://Scenes/tropical_slime.tscn" id="6_v5u43"]
-[ext_resource type="PackedScene" uid="uid://dqq1yhj6f0h84" path="res://Scenes/toxic_slime.tscn" id="7_qaxtv"]
+[ext_resource type="PackedScene" uid="uid://xa24crlpv41j" path="res://Scenes/hud.tscn" id="6_pvsct"]
+[ext_resource type="PackedScene" uid="uid://bnep3jab5x1ai" path="res://Scenes/toxic_slime.tscn" id="7_qaxtv"]
 [ext_resource type="PackedScene" uid="uid://c67yj0msugwy6" path="res://Scenes/music.tscn" id="8_p7tbv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ljfjh"]
@@ -450,14 +450,7 @@ shape = SubResource("WorldBoundaryShape2D_htdux")
 
 [node name="Slimes" type="Node" parent="."]
 
-[node name="Tropical Slime" parent="Slimes" instance=ExtResource("6_v5u43")]
-position = Vector2(1158, -126)
-
-[node name="Tropical Slime2" parent="Slimes" instance=ExtResource("6_v5u43")]
-position = Vector2(1270, -254)
-
-[node name="Tropical Slime" parent="." instance=ExtResource("6_v5u43")]
-position = Vector2(218, 305)
+[node name="HUD" parent="." instance=ExtResource("6_pvsct")]
 
 [node name="toxic slime" parent="." instance=ExtResource("7_qaxtv")]
-position = Vector2(1061, -125)
+position = Vector2(1039, -135)

@@ -48,11 +48,13 @@ func _physics_process(delta):
 		else:
 			animated_sprite.play("Jump")
 
-
-	if direction:
-		velocity.x = direction * SPEED
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+	if iced:
+		velocity.x = lerp(velocity.x,direction * SPEED, 0.1)
+	else: 
+		if direction:
+			velocity.x = direction * SPEED
+		else:
+			velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
 

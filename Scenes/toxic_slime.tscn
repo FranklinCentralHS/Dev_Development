@@ -75,3 +75,12 @@ target_position = Vector2(0, 11)
 [node name="RayCastRightDown" type="RayCast2D" parent="."]
 position = Vector2(11, 5)
 target_position = Vector2(0, 11)
+
+[node name="speedDuration" type="Timer" parent="."]
+wait_time = 5.0
+
+[node name="SpeedInt" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="speedDuration" to="." method="_on_speed_duration_timeout"]
+[connection signal="timeout" from="SpeedInt" to="." method="_on_speed_int_timeout"]

@@ -49,7 +49,7 @@ func _physics_process(delta):
 			animated_sprite.play("Jump")
 
 	if iced:
-		velocity.x = lerp(velocity.x,direction * SPEED, 0.1)
+		velocity.x = lerp(velocity.x,direction * SPEED, 0.01)
 	else: 
 		if direction:
 			velocity.x = direction * SPEED

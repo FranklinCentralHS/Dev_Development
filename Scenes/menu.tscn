@@ -1375,8 +1375,9 @@ theme_override_fonts/font = ExtResource("3_wwafb")
 theme_override_font_sizes/font_size = 24
 text = "How to Play:
 -Use WASD to move
+-You can double jump
 -Reach the flag to progress
--Collect Coins
+-There are 10 coins in each level
 -Don't Die"
 
 [node name="Credits" type="Label" parent="mainMenuScreen"]

@@ -2,7 +2,7 @@ extends Node2D
 
 const speed = 60
 var direction =1
-
+@onready var kill_zone = $killZone
 @onready var ray_cast_right = $RayCastRight
 @onready var ray_cast_left = $RayCastLeft
 @onready var ray_cast_leftB = $RayCastLeftB
@@ -25,3 +25,12 @@ func _process(delta):
 		
 
 	position.x+= direction*speed*delta
+
+
+func _on_slime_hurtbox_body_entered(body:Node2D):
+	print("i'm triggered")
+	if body is Player:
+		kill_zone.queue_free()
+		queue_free()
+		
+		

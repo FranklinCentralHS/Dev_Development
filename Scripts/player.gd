@@ -1,4 +1,6 @@
 extends CharacterBody2D
+class_name Player
+
 
 var jump=2
 const SPEED = 130.0
@@ -56,6 +58,8 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+	
 
 
 

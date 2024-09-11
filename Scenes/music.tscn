@@ -6,3 +6,4 @@
 position = Vector2(0, 1)
 stream = ExtResource("1_xrvw8")
 autoplay = true
+max_distance = 8000.0

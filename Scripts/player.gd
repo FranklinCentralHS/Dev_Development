@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-
+var jump=2
 const SPEED = 130.0
 const JUMP_VELOCITY = -300.0
 var death = false
@@ -12,13 +12,16 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 @onready var animated_sprite = $AnimatedSprite2D
 func _physics_process(delta):
+	if is_on_floor(): 
+		jump=2
 	# Add the gravity.
 	if not is_on_floor() and death==false:
 		velocity.y += gravity * delta
 	#The if statement below prevents the player from moving when dead
 	if death ==false:
 		# Handle jump.
-		if Input.is_action_just_pressed("jump") and is_on_floor():
+		if Input.is_action_just_pressed("jump") and jump>0:
+			jump-=1
 			velocity.y = JUMP_VELOCITY
 			audio_stream_player_2d.play()
 

@@ -5,11 +5,22 @@ insert description here
 ## Team Members
 ### fchsLemke - Mr. Lemke
 set up repo with readme, git config, and empty project files
-### [Now add each collaborator the same way]
-* [and their contributions]
-* [using this format if you want bullets]
-
+### RoboFox031 - Zane Grismore
+* Created Level 1
+* Created HUD
+* Created Pause Menu
+* Created Main Menu
+### solomonSpence07 Solomon Spence
+*New enemy
+Double jump
+Level two
+### Usrname - Human Name
+*
+### Usrname - Human Name
+*
 
 ## Reflections
-
-Your write up will go here
+Zane-
+Sol-My refelction is that gettiing the timer working  
+Devin-
+Bobby-

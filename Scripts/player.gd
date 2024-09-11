@@ -6,6 +6,7 @@ var jump=2
 const SPEED = 130.0
 const JUMP_VELOCITY = -300.0
 var death = false
+var iced = false
 #Tracks if the player is dead
 var direction
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -51,11 +52,13 @@ func _physics_process(delta):
 		else:
 			animated_sprite.play("Jump")
 
-
-	if direction:
-		velocity.x = direction * SPEED
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+	if iced:
+		velocity.x = lerp(velocity.x,direction * SPEED, 0.01)
+	else: 
+		if direction:
+			velocity.x = direction * SPEED
+		else:
+			velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
 

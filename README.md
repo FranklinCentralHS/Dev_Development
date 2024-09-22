@@ -13,7 +13,7 @@ set up repo with readme, git config, and empty project files
 * New enemy
 * Double jump
 * Level two
-### Usrname - Bobby
+### Agent-73 - Bobby
 * Level three
 * Ice Affect
 * Control Editing
